@@ -14,15 +14,15 @@ import { Dashboard } from "./pages/Dashboard";
 
 export function AppRouter() {
   const UserRoute = () => {
-    return /* Logged in user */ true ? <Outlet /> : <NoAccess />;
+    return /* Logged in user */ false ? <Outlet /> : <NoAccess />;
   };
 
   const AdminRoute = () => {
-    return /* Admin user logged in */ true ? <Outlet /> : <NoAccess />;
+    return /* Admin user logged in */ false ? <Outlet /> : <NoAccess />;
   };
 
   const AnonymousRoute = () => {
-    return /* Guest user condition */ true ? (
+    return /* Guest user condition */ false ? (
       <Navigate to="/" replace />
     ) : (
       <Outlet />
