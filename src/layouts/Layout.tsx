@@ -8,7 +8,7 @@ export function Layout(/*{ children }: { children: React.ReactNode }*/) {
     <div>
       <SidebarProvider>
         <AppSidebar />
-        <h1>Layout details</h1>
+        <h1>Put crumbs here</h1>
         <SidebarTrigger/>
         {/* {children} */}
       </SidebarProvider>
