@@ -14,7 +14,7 @@ import { Dashboard } from "./pages/Dashboard";
 
 export function AppRouter() {
   const UserRoute = () => {
-    return /* Logged in user */ false ? <Outlet /> : <NoAccess />;
+    return /* Logged in user */ true ? <Outlet /> : <NoAccess />;
   };
 
   const AdminRoute = () => {
