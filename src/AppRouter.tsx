@@ -42,7 +42,7 @@ export function AppRouter() {
           </Route>
 
           {/* Admin Routes = Must be authenticated and admin */}
-          <Route element={<UserRoute />}>
+          <Route element={<AdminRoute />}>
             <Route path="dashboard" element={<Dashboard />} />
             <Route index element={<Dashboard />} />
           </Route>
