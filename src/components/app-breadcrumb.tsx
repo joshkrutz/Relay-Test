@@ -24,13 +24,13 @@ export default function AppBreadcrumb(){
     })
   }
 
-  return (
-    <Breadcrumb >
+  return (<div className="bread-crumb">
+    <Breadcrumb>
       <BreadcrumbList>
         <SidebarTrigger/>
         {breadCrumbList()}
         {/* Put rest of breadcrumbs here */}
       </BreadcrumbList>
     </Breadcrumb>
-  )
+  </div>)
 }

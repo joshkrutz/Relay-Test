@@ -31,7 +31,7 @@ const items = [
 
 export default function AppSidebar() {
   return (
-    <Sidebar>
+    <Sidebar className="sidebar">
       <SidebarHeader>Black Relay</SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
