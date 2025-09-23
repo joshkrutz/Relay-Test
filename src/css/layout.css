@@ -1,9 +1,13 @@
 .layout {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 11fr;
-  grid-template-rows: 1fr 11fr;
+  grid-template-rows: 1fr 11fr; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 
   .layout-main-content{
+    flex-grow: 1;
     grid-row-start: 2;
     grid-column-start: 2;
     display: grid;
@@ -12,7 +16,7 @@
     max-height: 100vh;
 
     header, .main-header {
-      margin: 32px;
+      margin: 16px;
       grid-column: 1/9;
       background-color: magenta;
     }
@@ -34,6 +38,7 @@
     }
 
     .mission-clock{
+      margin: 16px;
       grid-column: 9/13;
       grid-row: 1/3;
       background-color: magenta;
@@ -44,6 +49,9 @@
 
   .bread-crumb{
     grid-column: 1/13;
+    flex-grow: 1;
+    width: 100vw;
+    height: 10vh;
   }
 
   .sidebar{

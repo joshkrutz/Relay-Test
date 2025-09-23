@@ -13,9 +13,9 @@ export function Layout(/*{ children }: { children: React.ReactNode }*/) {
       <SidebarProvider>
         <AppSidebar />
         <AppBreadcrumb />
+        <Outlet />
         {/* {children} */}
       </SidebarProvider>
-        <Outlet />
-        </div>
+    </div>
   );
 }
