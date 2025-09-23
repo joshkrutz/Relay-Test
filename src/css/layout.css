@@ -3,13 +3,18 @@
   grid-template-columns: 1fr 11fr;
   grid-template-rows: 1fr 11fr; */
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+
+  .bread-crumb{
+    margin: 8px;
+    margin-bottom: 0;
+    height: min-content;
+  }
 
   .layout-main-content{
     flex-grow: 1;
-    grid-row-start: 2;
-    grid-column-start: 2;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
@@ -44,19 +49,9 @@
       background-color: magenta;
     }
 
-  }
 
-
-  .bread-crumb{
-    grid-column: 1/13;
-    flex-grow: 1;
-    width: 100vw;
-    height: 10vh;
-  }
-
-  .sidebar{
-    grid-column: 1/1;
-    grid-row: 1/13;
   }
 }
+
+
 

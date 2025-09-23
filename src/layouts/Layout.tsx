@@ -9,13 +9,13 @@ export function Layout(/*{ children }: { children: React.ReactNode }*/) {
 
 
   return (
-    <div className="layout">
       <SidebarProvider>
         <AppSidebar />
-        <AppBreadcrumb />
-        <Outlet />
+        <div className="layout">
+          <AppBreadcrumb />
+          <Outlet />
+        </div>
         {/* {children} */}
       </SidebarProvider>
-    </div>
   );
 }
